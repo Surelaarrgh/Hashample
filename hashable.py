@@ -1,59 +1,67 @@
-#Hashcode test by Celebobo and Legend
+# Hashcode test by Celebobo and Legend
 
 
-
-inque=[]
-indat=[]
+inque = []
+indat = []
 
 with "open('test.in', 'r')" as f:
-    #content = f.readlines()
+    # content = f.readlines()
     lines = f.readlines()
-    print (lines)
+    print(lines)
 
-
-i= 1
+i = 1
 Cel = []
 Arey = []
-Charles= 0
-Add= 0
-Pot_Charles=0
+Charles = 0
+Hard = 0
+Pot_Charles = 0
 
 
-
-def Recca( i ):
+def Recca():
+    global i
     AddArray()
     Check()
-    i=+1
+    i = +1
+
 
 def Check():
-    if ( Add==Charles ) :
+    if Hard == Charles:
         Solution()
-    elif (Add < Charles) :
+    elif (Hard < Charles):
         kiip()
-    elif ( Add>Charles ) :
+    elif (Hard > Charles):
         Repl()
 
+
 def AddArray():
-    Add=+ Arey[-i]
+    global Hard
+    Hard = + Arey[-i]
     Cel.insert(0, Arey[-i])
 
+
 def Solution():
-    Pot_Charles= Add
+    global Pot_Charles
+    Pot_Charles = Hard
     Finish()
 
-def kiip ():
-    Pot_Charles= Add
-    Recca(i)
+
+def kiip():
+    global Pot_Charles
+    Pot_Charles = Hard
+    Recca()
+
 
 def Repl():
-    Add = (Add - (Arey[-i]))
+    global Hard
+    Hard = (Hard - (Arey[-i]))
     Cel.pop()
     AddArray()
     Recca()
 
-    Recca(i)
+    Recca()
+
 
 def Finish():
-    print (Pot_Charles)
-    print (len(Cel)
-    print (Cel)
+    print(Pot_Charles)
+    print(len(Cel))
+    print(Cel)
