@@ -8,13 +8,14 @@ with open('b_small.in', 'r') as f:
   #  content = f.readlines()
     lines = f.read()
     print(lines)
+lines.split(" ")
 
 i = 1
 Cel = []
 Arey = []
 
-Charles = lines[0]
-Pizzas = lines[1]
+Charles = Arey[0]
+Pizzas = Arey[1]
 Hard = 0
 Pot_Charles = 0
 
