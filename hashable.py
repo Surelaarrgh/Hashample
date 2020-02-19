@@ -4,15 +4,17 @@
 inque = []
 indat = []
 
-with "open('b_small.in', 'r')" as f:
-    # content = f.readlines()
-    lines = f.readlines()
+with open('b_small.in', 'r') as f:
+  #  content = f.readlines()
+    lines = f.read()
     print(lines)
 
 i = 1
 Cel = []
 Arey = []
-Charles = 0
+
+Charles = lines[0]
+Pizzas = lines[1]
 Hard = 0
 Pot_Charles = 0
 
@@ -68,6 +70,8 @@ def Finish():
 
 
 print(f)
+print(Charles)
+print(Pizzas)
 print(Hard)
 print(Pot_Charles)
 print(Cel)
