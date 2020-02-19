@@ -1,21 +1,31 @@
 # Hashcode test by Celebobo and Legend
 
 
-inque = []
-indat = []
+
 
 with open('b_small.in', 'r') as f:
   #  content = f.readlines()
-    lines = f.read()
-    print(lines)
+    lines = f.read().splitlines()
+    #lines = lines
+    #lines = lines.strip()
+   # lines = lines.split(" ")
+    #print(lines)
 #lines.split(" ")
+
+
+
+inque = lines [0]
+#inque = str (inque)
+inque = inque.split(" ")
+indat = lines[1]
+indat = indat.split(" ")
 
 i = 1
 Cel = []
-Arey = lines.split(" ")
+Arey = indat.copy()
 
-Charles = Arey[0]
-Pizzas = Arey[1]
+Charles = int (inque[0])
+Pizzas = int (inque[1])
 Hard = 0
 Pot_Charles = 0
 
@@ -24,7 +34,7 @@ def Recca():
     global i
     AddArray()
     Check()
-    i = +1
+    i = i + 1
 
 
 def Check():
@@ -38,7 +48,7 @@ def Check():
 
 def AddArray():
     global Hard
-    Hard = + Arey[-i]
+    Hard = Hard + int (Arey[-i])
     Cel.insert(0, Arey[-i])
 
 
@@ -72,6 +82,10 @@ def Finish():
 
 print(f)
 print(i)
+print(lines)
+print(inque)
+print(Arey)
+#print(indat)
 print(Charles)
 print(Pizzas)
 print(Hard)
