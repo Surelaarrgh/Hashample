@@ -8,11 +8,11 @@ with open('b_small.in', 'r') as f:
   #  content = f.readlines()
     lines = f.read()
     print(lines)
-lines.split(" ")
+#lines.split(" ")
 
 i = 1
 Cel = []
-Arey = []
+Arey = lines.split(" ")
 
 Charles = Arey[0]
 Pizzas = Arey[1]
@@ -71,9 +71,11 @@ def Finish():
 
 
 print(f)
+print(i)
 print(Charles)
 print(Pizzas)
 print(Hard)
+print(Arey[-i])
 print(Pot_Charles)
 print(Cel)
 print(len(Cel))
