@@ -4,7 +4,7 @@
 inque = []
 indat = []
 
-with "open('test.in', 'r')" as f:
+with "open('b_small.in', 'r')" as f:
     # content = f.readlines()
     lines = f.readlines()
     print(lines)
