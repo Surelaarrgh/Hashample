@@ -65,3 +65,10 @@ def Finish():
     print(Pot_Charles)
     print(len(Cel))
     print(Cel)
+
+
+print(f)
+print(Hard)
+print(Pot_Charles)
+print(Cel)
+print(len(Cel))
