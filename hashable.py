@@ -1,5 +1,6 @@
 # Hashcode test by Celebobo and Legend
 
+
 test = input("please input name of test file")
 with open(test, 'r') as f:
     #  content = f.readlines()
@@ -33,9 +34,9 @@ steve = 0
 
 def recca():
     global i
+    i = i + 1
     addarray()
     chiek()
-    i = i + 1
 
 
 def chiek():
@@ -51,9 +52,9 @@ def addarray():
     global hard
     global i
     global steve
-    steve = int(arey[-i])
-    hard = hard + steve
-    Cel.insert(0, steve)
+    #    #steve =
+    hard = hard + int(arey[-i])
+    Cel.insert(0, arey[-i])
 
 
 def solution():
@@ -70,20 +71,22 @@ def kiip():
 
 def repl():
     global hard
-    hard = (hard - (arey[-i]))
-    Cel.pop()
+    global i
+    hard = hard - (arey[-i])
+    #dibs = int(inque[1]) - (i+1)
+    Cel.pop(0)
     addarray()
     recca()
-
-
-recca()
 
 
 def feenish():
     print(pot_charles)
     print(len(Cel))
     print(Cel)
+    exit()
 
+
+recca()
 
 print(f)
 print(i)
