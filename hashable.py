@@ -1,21 +1,18 @@
 # Hashcode test by Celebobo and Legend
 
 
-
-
 with open('b_small.in', 'r') as f:
-  #  content = f.readlines()
+    #  content = f.readlines()
     lines = f.read().splitlines()
-    #lines = lines
-    #lines = lines.strip()
-   # lines = lines.split(" ")
-    #print(lines)
-#lines.split(" ")
+    # lines = lines
+    # lines = lines.strip()
+# lines = lines.split(" ")
+# print(lines)
+# lines.split(" ")
 
 
-
-inque = lines [0]
-#inque = str (inque)
+inque = lines[0]
+# inque = str (inque)
 inque = inque.split(" ")
 indat = lines[1]
 indat = indat.split(" ")
@@ -24,8 +21,8 @@ i = 1
 Cel = []
 Arey = indat.copy()
 
-Charles = int (inque[0])
-Pizzas = int (inque[1])
+Charles = int(inque[0])
+Pizzas = int(inque[1])
 Hard = 0
 Pot_Charles = 0
 
@@ -48,7 +45,7 @@ def Check():
 
 def AddArray():
     global Hard
-    Hard = Hard + int (Arey[-i])
+    Hard = Hard + int(Arey[-i])
     Cel.insert(0, Arey[-i])
 
 
@@ -85,7 +82,7 @@ print(i)
 print(lines)
 print(inque)
 print(Arey)
-#print(indat)
+# print(indat)
 print(Charles)
 print(Pizzas)
 print(Hard)
