@@ -14,8 +14,10 @@ with open(test, 'r') as f:
 inque = lines[0]
 # inque = str (inque)
 inque = inque.split(" ")
+inque = list(map(int, inque))
 indat = lines[1]
 indat = indat.split(" ")
+indat = list(map(int, indat))
 
 i = 1
 Cel = []
@@ -25,6 +27,7 @@ charles = int(inque[0])
 pizzas = int(inque[1])
 hard = 0
 pot_charles = 0
+steve = 0
 
 
 def recca():
@@ -45,8 +48,10 @@ def chiek():
 
 def addarray():
     global hard
-    hard = hard + int(arey[-i])
-    Cel.insert(0, arey[-i])
+    global steve
+    steve = arey[-i]
+    hard = hard + int(steve)
+    Cel.insert(0, steve)
 
 
 def solution():
@@ -86,7 +91,7 @@ print(arey)
 print(charles)
 print(pizzas)
 print(hard)
-print(arey[-i])
+print(steve)
 print(pot_charles)
 print(Cel)
 print(len(Cel))
