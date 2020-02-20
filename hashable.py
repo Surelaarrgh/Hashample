@@ -19,60 +19,60 @@ indat = indat.split(" ")
 
 i = 1
 Cel = []
-Arey = indat.copy()
+arey = indat.copy()
 
-Charles = int(inque[0])
-Pizzas = int(inque[1])
-Hard = 0
-Pot_Charles = 0
+charles = int(inque[0])
+pizzas = int(inque[1])
+hard = 0
+pot_charles = 0
 
 
-def Recca():
+def recca():
     global i
-    AddArray()
-    Check()
+    addarray()
+    chiek()
     i = i + 1
 
 
-def Check():
-    if Hard == Charles:
-        Solution()
-    elif (Hard < Charles):
+def chiek():
+    if hard == charles:
+        solution()
+    elif hard < charles:
         kiip()
-    elif (Hard > Charles):
-        Repl()
+    elif hard > charles:
+        repl()
 
 
-def AddArray():
-    global Hard
-    Hard = Hard + int(Arey[-i])
-    Cel.insert(0, Arey[-i])
+def addarray():
+    global hard
+    hard = hard + int(arey[-i])
+    Cel.insert(0, arey[-i])
 
 
-def Solution():
-    global Pot_Charles
-    Pot_Charles = Hard
-    Finish()
+def solution():
+    global pot_charles
+    pot_charles = hard
+    feenish()
 
 
 def kiip():
-    global Pot_Charles
-    Pot_Charles = Hard
-    Recca()
+    global pot_charles
+    pot_charles = hard
+    recca()
 
 
-def Repl():
-    global Hard
-    Hard = (Hard - (Arey[-i]))
+def repl():
+    global hard
+    hard = (hard - (arey[-i]))
     Cel.pop()
-    AddArray()
-    Recca()
+    addarray()
+    recca()
 
-    Recca()
+    recca()
 
 
-def Finish():
-    print(Pot_Charles)
+def feenish():
+    print(pot_charles)
     print(len(Cel))
     print(Cel)
 
@@ -81,12 +81,12 @@ print(f)
 print(i)
 print(lines)
 print(inque)
-print(Arey)
+print(arey)
 # print(indat)
-print(Charles)
-print(Pizzas)
-print(Hard)
-print(Arey[-i])
-print(Pot_Charles)
+print(charles)
+print(pizzas)
+print(hard)
+print(arey[-i])
+print(pot_charles)
 print(Cel)
 print(len(Cel))
