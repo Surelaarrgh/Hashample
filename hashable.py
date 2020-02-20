@@ -1,7 +1,7 @@
 # Hashcode test by Celebobo and Legend
 
-
-with open('b_small.in', 'r') as f:
+test = input("please input name of test file")
+with open('test', 'r') as f:
     #  content = f.readlines()
     lines = f.read().splitlines()
     # lines = lines
