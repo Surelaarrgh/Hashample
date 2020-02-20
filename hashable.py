@@ -22,6 +22,7 @@ indat = list(map(int, indat))
 i = 1
 Cel = []
 arey = indat.copy()
+arey = list(map(int, arey))
 
 charles = int(inque[0])
 pizzas = int(inque[1])
@@ -48,9 +49,10 @@ def chiek():
 
 def addarray():
     global hard
+    global i
     global steve
-    steve = arey[-i]
-    hard = hard + int(steve)
+    steve = int(arey[-i])
+    hard = hard + steve
     Cel.insert(0, steve)
 
 
@@ -73,7 +75,8 @@ def repl():
     addarray()
     recca()
 
-    recca()
+
+recca()
 
 
 def feenish():
@@ -91,6 +94,7 @@ print(arey)
 print(charles)
 print(pizzas)
 print(hard)
+# print(arey[-i])
 print(steve)
 print(pot_charles)
 print(Cel)
